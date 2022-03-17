@@ -103,3 +103,19 @@ h1, h2, h3, .item-header {
     border-radius: 4px;
     background: var(--accent-color);
 }
+
+/* Item Previews */
+
+.item-previews {
+    display: none;
+}
+
+
+@media (min-width: 60em) {
+    
+    .item-previews {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5em 0;
+    }
+}
