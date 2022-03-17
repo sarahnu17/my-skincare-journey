@@ -67,5 +67,39 @@ h1, h2, h3, .item-header {
     color: var(--med-dark-color);
 }
 
+/* Hero Section */
 
+.hero-header {
+    font-size: 2.25rem;
+}
 
+.hero-subheader {
+    font-weight: 300;
+    padding: 0.25em 1em 0;
+}
+
+/* Item Menu List */
+
+.skincare-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.product-skincare-link {
+    padding: 0.45em 1em 0.45em 1em;
+    cursor: pointer;
+    font-family: var(--slab-font);
+    font-size: 1.1rem;
+}
+
+.btn-skincare {
+    display: none;
+}
+
+.btn-skincare:checked + .product-skincare-link {
+    color: var(--light-color);
+    border-radius: 4px;
+    background: var(--accent-color);
+}
