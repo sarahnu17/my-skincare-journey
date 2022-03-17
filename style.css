@@ -3,8 +3,13 @@
 :root {
     --slab-font: 'Rokkitt', serif;
     --sans-font: 'Roboto', sans-serif;
-
     
+    --background-color: #F8F8F8;
+    --accent-color: #591426;
+    --med-dark-color: #0D0000;
+    --dark-color: #000;
+    --light-color: #fff;
+
 }
 
 * {
@@ -12,3 +17,55 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: var(--sans-font);
+    background: var(--background-color);
+}
+
+section, footer {
+    padding: 2em 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: min(87%, 90em);
+}
+
+header {
+    padding: 1em 0;
+    border-bottom: 3px solid var(--accent-color);  
+}
+
+h1, h2, h3, .item-header {
+    font-family: var(--slab-font);
+    font-weight: 300;
+}
+
+.center {
+    text-align: center;
+}
+
+.red-color {
+    color: var(--accent-color);
+}
+
+.med-dark-color {
+    color: var(--med-dark-color);
+}
+
+
+
