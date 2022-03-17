@@ -162,7 +162,6 @@ h1, h2, h3, .item-header {
     gap: 0.35em;
 }
 
-
 .rating-title {
     text-align: center;
     text-transform: uppercase;
@@ -177,6 +176,10 @@ h1, h2, h3, .item-header {
     padding: 0.5em 0 0.5em 0.5em;
     font-weight: 300;
     line-height: 1.5;
+}
+
+.toner-essence, .exfoilator, .mask, .serum, .moisturizer, .sunscreen {
+    display: none;
 }
 
 
