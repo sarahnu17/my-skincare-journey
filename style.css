@@ -255,6 +255,7 @@ h1, h2, h3, .item-header {
     }
 
     .close-button {
+        display: block;
         position: absolute;
         cursor: pointer;
         border: none;
