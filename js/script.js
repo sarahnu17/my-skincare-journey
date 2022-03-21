@@ -12,6 +12,14 @@ openModalButtons.forEach( btn => {
     })
 });
 
+openModalPopUp.forEach( btn => {
+    btn.addEventListener('click', () => {
+        const products = document.querySelectorAll(btn.dataset.modalTarget);
+        openModalPop(products);
+    })
+});
+
+
 function openModal(modal) {
     if(modal == null) return
 
@@ -24,4 +32,16 @@ function openModal(modal) {
     modal.forEach(function(el) {
         el.style.display = "grid";
     });
+}
+
+function openModalPop(products) {
+    if (products == null) return
+
+    // Loop through the products array and add active class to the product that was clicked on
+    for(var i = 0; i < products.length; i++) {
+        products[i].classList.add('active');
+    }
+    // Add the black overlay to background of the popup item
+    overlay.classList.add('active');
+
 }
