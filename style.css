@@ -46,7 +46,7 @@ li {
 }
 
 header {
-    padding: 1em 0;
+    padding: 1em 3em;
     border-bottom: 3px solid var(--accent-color);  
 }
 
@@ -65,6 +65,12 @@ h1, h2, h3, .item-header {
 
 .med-dark-color {
     color: var(--med-dark-color);
+}
+
+/* Header Section */
+
+.logo img {
+    max-height: 50px;
 }
 
 /* Hero Section */
@@ -188,6 +194,14 @@ h1, h2, h3, .item-header {
 
 
 @media (min-width: 60em) {
+
+    header {
+        padding: 2em 6em;
+    }
+
+    .logo img {
+        max-height: 62px;
+    }
 
     section {
         padding: 3.5em 0;
