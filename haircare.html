@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Haircare products I've tried and my experience using them.">
+    <title>My Haircare Journey </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">SkincareJourney Logo</a>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#" class="nav-list-link">Skincare</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-list-link">Bodycare</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-list-link">Haircare</a></li>
+                <li class="nav-list-item"><a href="#" class="nav-list-link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-header">My Haircare Journey</h1>
+            <p class="hero-subheader">Haircare products I've tried and my experience using them</p>
+        </div>
+    </section>
+
+    <section class="skincare-lists-section">
+        <div class="container">
+            <ul class="skincare-list">
+                <li class="submenu-btn">
+                    <input type="radio" name="product-skincare-link" id="product-skincare-link" class="btn-skincare" checked>
+                    <label for="product-skincare-link" class="product-skincare-link" data-target=".item">All</label>
+                </li>
+                <li class="submenu-btn">
+                    <input type="radio" name="product-skincare-link" id="conditioner-skincare-link" class="btn-skincare">
+                    <label for="conditioner-skincare-link" class="product-skincare-link skincare-link-border" data-target=".conditioner">Conditioners</label>
+                </li>
+                <li class="submenu-btn">
+                    <input type="radio" name="product-skincare-link" id="masque-skincare-link" class="btn-skincare">
+                    <label for="masque-skincare-link" class="product-skincare-link skincare-link-border" data-target=".masque">Masques</label>
+                </li>
+                <li class="submenu-btn">
+                    <input type="radio" name="product-skincare-link" id="shampoo-skincare-link" class="btn-skincare">
+                    <label for="shampoo-skincare-link" class="product-skincare-link skincare-link-border" data-target=".shampoo">Shampoos</label>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="all-items">
+        <div class="container">
+            <div class="item-previews all" id="all">
+                <div class="conditioner item item-single">
+                    <div class="item-container">
+                        <div class="item-showcase-img" >
+                            <button data-modal-target="#product41" class="modal-popup">
+                                <div class="img-modal">
+                                    <img src="images/transparent-imgs/haircare/sheamoisture_bamboo_charcoal_conditioner_transparent.png" alt="Shea Moisture Bamboo Charcoal Conditioner transparent image" class="img-showcase img-shadow">
+                                </div>
+                                
+                                <p class="item-header">Shea Moisture Bamboo Charcoal Conditioner</p>
+                                <div class="rating">
+                                    <span class="material-icons star-icon"> star </span>
+                                    <p>8/10</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="masque item item-single">
+                    <div class="item-container">
+                        <div class="item-showcase-img" >
+                            <button data-modal-target="#product42" class="modal-popup"><img src="images/transparent-imgs/haircare/sheamoisture_bamboo_charcoal_masque_transparent.png" alt="Shea Moisture Bamboo Charcoal Masque transparent image" class="img-showcase img-shadow">
+                                <p class="item-header">Shea Moisture Bamboo Charcoal Masque</p>
+                                <div class="rating">
+                                    <span class="material-icons star-icon"> star </span>
+                                    <p>8/10</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="shampoo item item-single">
+                    <div class="item-container">
+                        <div class="item-showcase-img" >
+                            <button data-modal-target="#product43" class="modal-popup"><img src="images/transparent-imgs/haircare/sheamoisture_bamboo_charcoal_shampoo_transparent.png" alt="Shea Moisture Bamboo Charcoal Shampoo transparent image" class="img-showcase img-shadow">
+                                <p class="item-header">Shea Moisture Bamboo Charcoal Shampoo</p>
+                                <div class="rating">
+                                    <span class="material-icons star-icon"> star </span>
+                                    <p>8/10</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-popups">
+                <div class="products conditioner item" id ="product41">
+                    <div class="popUp-img">
+                        <img src="images/resize-imgs/haircare/Shea_Bamboo_Charcoal_Conditioner_Extended.jpg" alt="Shea Moisture Bamboo Charcoal Conditioner">
+                    </div>
+                    <div class="item-content">
+                         <button data-close-button class="close-button">&times;</button>
+                        <p class="item-category">Hair Conditioner</p>
+                        <p class="item-header">Shea Moisture Bamboo Charcoal Conditioner</p>
+                        <div class="rating">
+                            <span class="material-icons star-icon"> star </span>
+                            <p>8/10</p>
+                        </div>
+                        <div class="item-details">
+                            <p class="item-details-header">Purchased</p>
+                            <p class="item-details-content">Amazon</p>
+                        </div>
+                        <div class="item-details">
+                            <p class="item-details-header">Repurchasing?</p>
+                            <p class="item-details-content">Yes</p>
+                        </div>
+                        <div class="item-details">
+                            <p class="item-details-header">Price</p>
+                            <p class="item-details-content">$10</p>
+                        </div>
+                        <div class="item-details">
+                            <p class="item-details-header">Experience</p>
+                            <p class="item-details-content">When I bought this on Amazon this conditioner came in a set of 3 with shampoo and a masque. I really enjoyed using the conditioner and will definitely repurchase again. I found that it helped untangle my hair and left my hair feeling really smooth for a couple of days. The only reason I haven't repurchased it yet is because the price keeps on changing on Amazon and it keeps on going in and out of stock. I wish they would sell the shampoo and conditioner in bigger bottles. </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="products masque item" id ="product42">
+                    <div class="popUp-img">
+                        <img src="images/resize-imgs/haircare/Shea_Bamboo_Charcoal_Masque_Extended.jpg" alt="Shea Moisture Bamboo Charcoal Masque">
+                    </div>
+                    <div class="item-content">
+                         <button data-close-button class="close-button">&times;</button>
+                        <p class="item-category">Hair Masque</p>
+                        <p class="item-header">Shea Moisture Bamboo Charcoal Masque</p>
+                        <div class="rating">
+                            <span class="material-icons star-icon"> star </span>
+                            <p>8/10</p>
+                        </div>
+                        <div class="item-details">
+                            <p class="item-details-header">Purchased</p>
+                            <p class="item-details-content">Amazon</p>
+                        </div>
+                        <div class="item-details">
+                            <p class="item-details-header">Repurchasing?</p>
+                            <p class="item-details-content">Yes</p>
+                        </div>
+                        <div class="item-details">
+                            <p class="item-details-header">Price</p>
+                            <p class="item-details-content">$10</p>
+                        </div>
+                        <div class="item-details">
+                            <p class="item-details-header">Experience</p>
+                            <p class="item-details-content">This came in a set with the Shampoo and Conditioner when I purchased it on Amazon. This is the first masque that I used for my hair so I don't really have anything to compare it to but I found it very beneficial for my hair. Similar to the conditioner it made my hair feel really smooth and untangled and leaving it in my hair for a few minutes before washing off in the shower. I will definitely repurchase the set off of Amazon. </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="products shampoo item" id ="product43">
+                    <div class="popUp-img">
+                        <img src="images/resize-imgs/haircare/Shea_Bamboo_Charcoal_Shampoo_Extended.jpg" alt="Shea Moisture Bamboo Charcoal Shampoo">
+                    </div>
+                    <div class="item-content">
+                         <button data-close-button class="close-button">&times;</button>
+                        <p class="item-category">Hair Shampoo</p>
+                        <p class="item-header">Shea Moisture Bamboo Charcoal Shampoo</p>
+                        <div class="rating">
+                            <span class="material-icons star-icon"> star </span>
+                            <p>8/10</p>
+                        </div>
+                        <div class="item-details">
+                            <p class="item-details-header">Purchased</p>
+                            <p class="item-details-content">Amazon</p>
+                        </div>
+                        <div class="item-details">
+                            <p class="item-details-header">Repurchasing?</p>
+                            <p class="item-details-content">Yes</p>
+                        </div>
+                        <div class="item-details">
+                            <p class="item-details-header">Price</p>
+                            <p class="item-details-content">$10</p>
+                        </div>
+                        <div class="item-details">
+                            <p class="item-details-header">Experience</p>
+                            <p class="item-details-content">This came in a set with the masque and Conditioner when I purchased it on Amazon. I wasn't sure at first if the shampoo was suppose to be super water but I enjoyed how it felt on my hair. Throughout the year I sometimes suffer from dandruff and this shampoo did a good job of cleaning my hair but not leaving it stripped. So I will definitely repurchase the set off of Amazon. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright center">2022 SCN Copyright</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
