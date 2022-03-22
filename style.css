@@ -47,7 +47,8 @@ li {
 
 header {
     padding: 1em 3em;
-    border-bottom: 3px solid var(--accent-color);  
+    border-bottom: 3px solid var(--accent-color); 
+    position: relative; 
 }
 
 h1, h2, h3, .item-header {
@@ -71,6 +72,110 @@ h1, h2, h3, .item-header {
 
 .logo img {
     max-height: 50px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 2em;
+    height: 100%;
+    z-index: 10;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    width: 2em;
+    height: 2px;
+    border-radius: 2px;
+    position: relative;
+    background: var(--med-dark-color);
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+.nav {
+    position: absolute;
+    right: 0;
+    padding-right: 2em;
+    text-align: right;
+    padding-top: 1.25em;
+    z-index: 10;
+
+    transform: scale(0,1);
+    transform-origin: top;
+    transition: scale 400ms ease-in-out;
+}
+
+.nav-list-item {
+    padding-bottom: 0.75em;
+}
+
+.nav-list-link{
+    opacity: 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+    transition: opacity 150ms ease-in-out;
+    
+    font-family: var(--slab-font);
+    color: var(--light-color);
+}
+
+.nav-list-link:hover {
+    color: var(--background-color);
+}
+
+.menu-overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .80);
+    pointer-events: none;
+}
+  
+.nav-toggle:checked ~ .nav {
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ .nav .nav-list-link {
+    opacity: 1;
+    transition: opacity 150ms ease-in-out;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span,
+.nav-toggle:checked ~ .nav-toggle-label span::before,
+.nav-toggle:checked ~ .nav-toggle-label span::after {
+    background: var(--light-color);
+}
+
+.nav-toggle:checked ~ .menu-overlay {
+    opacity: 1;
 }
 
 /* Hero Section */
@@ -196,11 +301,44 @@ h1, h2, h3, .item-header {
 @media (min-width: 60em) {
 
     header {
-        padding: 2em 6em;
+        padding: 1.2em 6em;
+
+        display: flex;
+        justify-content: space-between;
     }
 
     .logo img {
         max-height: 62px;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    .nav {
+        all: unset;
+        
+        width: 27%;
+        align-self: center;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-list-item {
+        padding: 0;
+    }
+
+    .nav-list-link {
+        opacity: 1;
+        color: var(--med-dark-color);
+    }
+
+    .nav-list-link:hover {
+        color: var(--dark-color);
     }
 
     section {
