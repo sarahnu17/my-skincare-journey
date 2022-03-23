@@ -9,6 +9,7 @@
     --med-dark-color: #0D0000;
     --dark-color: #000;
     --light-color: #fff;
+    --light-grey-color: #5e5651;
 
 }
 
@@ -297,6 +298,42 @@ h1, h2, h3, .item-header {
     display: none;
 }
 
+/* About Me Page */
+
+.about-short-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1em;
+}
+
+.about-short-card {
+    padding-bottom: 0.5em;
+}
+
+.about-img {
+    padding: 2.5em 0 2em;
+}
+
+.about-img img {
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.about-info {
+    padding: 0 0.5em;
+}
+
+.about-info p {
+    line-height: 1.5;
+    font-weight: 300;
+    padding-bottom: 0.75em;
+}
+
+/* Footer Section */
+
+.copyright {
+    font-style: italic;
+}
 
 @media (min-width: 60em) {
 
@@ -338,7 +375,7 @@ h1, h2, h3, .item-header {
     }
 
     .nav-list-link:hover {
-        color: var(--dark-color);
+        color: var(--light-grey-color);
     }
 
     section {
@@ -468,4 +505,41 @@ h1, h2, h3, .item-header {
         opacity: 1;
         pointer-events: all;
     }
+
+    /* About Me Page */
+
+    .about-short-header {
+        font-size: 0.9rem;
+    }
+
+    .about-short-subheader {
+        font-size: 1.45rem;
+    }
+
+    .about-short-content {
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        justify-items: center;
+    }
+
+    .about-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 5em;
+    }
+
+    .about-img {
+        width: 32%;
+        padding: 0;
+    }
+
+    .about-info {
+        width: 40%;
+    }
+
+    .about-info p {
+        padding-bottom: 1em;
+        font-size: 1.1rem;
+    }
+
 }
